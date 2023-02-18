@@ -4,6 +4,7 @@ import cors from "cors";
 import { Configuration, OpenAIApi } from "openai";
 
 dotenv.config();
+console.log(process.env.SECRET_KEY);
 
 const configuration = new Configuration({
   apiKey: process.env.SECRET_KEY,
